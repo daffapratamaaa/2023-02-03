@@ -162,7 +162,7 @@ function clickIE4(){if (event.button==2){alert(message);return false;}} function
    </div>
 
 <!-- Jangan Edit Bagian Ini --><script>
-  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart-broken"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart-broken"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); const inip = []; const iniwp = []; iden = 1; setTimeout(tes,500);function tes(){wallpaper.src = iniwp[1];}
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); loveIn.style="display:none";ketdef=ket.innerHTML;ket.innerHTML="Memuat...";ftganti=0;fungsi=0;fungsiAwal=0;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart-broken"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart-broken"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); const inip = []; const iniwp = []; iden = 1; setTimeout(tes,500);function tes(){wallpaper.src = iniwp[1];}
   
   iniwp[1] = bg1.src; 
   iniwp[2] = bg2.src; 
@@ -188,6 +188,15 @@ function clickIE4(){if (event.button==2){alert(message);return false;}} function
       setTimeout(kalimatakhir,14200); //5
       setTimeout(kalimatakhir,16000); //6
   }
+
+audio.addEventListener('progress', function() {
+
+    if(ket.innerHTML!=ketdef){
+        var loadedPercentage = this.buffered.end(0); 
+        loveIn.style="";
+        ket.innerHTML=ketdef;
+    }
+  });
 
 pesanAkhir1 = inip[iden];
 pesanAkhir3 = "<br>thank you, and i love uuu";
